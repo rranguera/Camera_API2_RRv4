@@ -455,6 +455,8 @@ public class Camera2BasicFragment extends Fragment
         nomDeLaFoto += "_RR-cam.jpg";
 
 
+        // Path
+        // TODO: mirar de definir una carpeta destí personalitzada
         mFile = new File(getActivity().getExternalFilesDir(null), nomDeLaFoto);
     }
 
@@ -856,7 +858,7 @@ public class Camera2BasicFragment extends Fragment
                 public void onCaptureCompleted(@NonNull CameraCaptureSession session,
                                                @NonNull CaptureRequest request,
                                                @NonNull TotalCaptureResult result) {
-                    showToast("Saved: " + mFile);
+                    showToast("S'ha desat: " + mFile);      // TODO (?): mostrar només el nom del fitxer, sense path?
                     Log.d(TAG, mFile.toString());
                     unlockFocus();
                 }
