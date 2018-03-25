@@ -156,6 +156,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\isra\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\isra\AndroidStudioProjects\Camera_API2_RRv4\Application\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_305edfa6bb141395990b7e7eda0cf61533d9a755.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isra\AndroidStudioProjects\Camera_API2_RRv4\Application\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\isra\AndroidStudioProjects\Camera_API2_RRv4\Application\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_5b907374c957a75d7d07a5c9edbbc1e7ae22a818.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\isra\AndroidStudioProjects\Camera_API2_RRv4\Application\build\intermediates\exploded-aar\com.android.support\support-v13\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
