@@ -63,10 +63,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
@@ -434,7 +437,25 @@ public class Camera2BasicFragment extends Fragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mFile = new File(getActivity().getExternalFilesDir(null), "pic.jpg");
+
+
+        String nomDeLaFoto = "";
+/*
+        Calendar calendar = Calendar.getInstance();
+        nomDeLaFoto += calendar.get(Calendar.YEAR) + "-";
+        nomDeLaFoto += calendar.get(Calendar.MONTH)+1 + "-";
+        nomDeLaFoto += calendar.get(Calendar.DAY_OF_MONTH) + "_";
+        nomDeLaFoto += calendar.get(Calendar.HOUR_OF_DAY);
+        nomDeLaFoto += calendar.get(Calendar.MINUTE);
+        nomDeLaFoto += calendar.get(Calendar.SECOND);
+*/
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
+        nomDeLaFoto = sdf.format(new Date());
+
+        nomDeLaFoto += "_RR-cam.jpg";
+
+
+        mFile = new File(getActivity().getExternalFilesDir(null), nomDeLaFoto);
     }
 
     @Override
