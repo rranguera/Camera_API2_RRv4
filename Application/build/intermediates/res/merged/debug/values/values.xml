@@ -690,7 +690,7 @@
     <string name="description_cam">Cam</string>
     <string name="description_info">Info</string>
     <string name="description_text">Textos</string>
-    <string name="info_pantalla_ppal">:D</string>
+    <string name="info_pantalla_ppal">Video-subtitler</string>
     <string name="intro_message">
         
         
@@ -701,7 +701,7 @@
         
         
     </string>
-    <string name="picture">Picture</string>
+    <string name="picture">FOTO</string>
     <string name="request_permission">This sample needs camera permission.</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>

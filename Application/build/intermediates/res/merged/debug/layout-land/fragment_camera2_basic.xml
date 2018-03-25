@@ -27,21 +27,14 @@
 
     <FrameLayout
         android:id="@+id/control"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/texture"
-        android:background="@color/control_background"
+        android:background="@android:color/holo_blue_bright"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/picture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/picture" />
 
         <ImageButton
             android:id="@+id/info"
@@ -52,6 +45,14 @@
             android:contentDescription="@string/description_info"
             android:padding="20dp"
             android:src="@drawable/ic_action_info" />
+
+        <Button
+            android:id="@+id/picture"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/picture" />
 
 
     </FrameLayout>
